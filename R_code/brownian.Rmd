@@ -1,0 +1,127 @@
+---
+title: "Untitled"
+author: "Jako Rostami"
+date: '2022-08-19'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(dplyr)
+require(ggplot2)
+```
+
+## Create Brownian function
+
+
+```{r cars}
+# Generate Brownian motion
+
+brown_values = function(t, var, x=NULL){
+  
+  t = t
+  
+  var = var
+  
+  if(x == "normal"){
+    x <- rnorm(n=length(t)-1, sd=sqrt(var))
+  } else if(x == "poisson"){
+    x <- rpois(n=length(t)-1, lambda=sqrt(var))
+  } else {
+    stop("Must provide either normal or poisson distribution")
+  }
+  
+  x <- c(0, cumsum(x))
+}
+
+```
+
+## Testing Brownian motion
+
+Standard Brownian motion N(0,1)
+Wiener process N(0, 4)
+
+```{r pressure, echo=FALSE}
+t = seq(1, 100)
+
+brownian_1 = brown_values(t=1:100, var=1, x="normal")
+wiener_process = brown_values(t=1:100, var=4, x="normal")
+
+df = tibble(t=t, brownian_1 = brownian_1, brownian_2 = wiener_process)
+
+df %>% ggplot(aes(x=t, y=brownian_1)) + geom_line() + geom_line(aes(x=t, y=brownian_2), color="blue") + ylab("W(t)")
+
+```
+```{r}
+#### ------ Testing the Gaussian pdf in functional form vs R's dnorm
+
+fake_data = seq(30, 160, length=300)
+sigma = 15
+mu = 100 
+
+# Mu and sigma will show us the central tendency and its dispersion
+
+f_x_given_mu_sigma = (1 / sqrt(2*pi*sigma)) * exp( -(1/(2*sigma**2)) * (fake_data - mu)**2 )
+
+# Now do the same but with the R function dnorm
+
+f_dnorm = dnorm(fake_data, mean=mu, sd=sigma)
+
+par(mfrow=c(1, 2))
+
+#plot(x, f_x_given_mu_sigma, main="Gaussian PDF declared"); plot(x, f_dnorm, main="Using R dnorm")
+
+df = tibble(pdf_decl = f_x_given_mu_sigma, r_dnorm = f_dnorm, IQ = fake_data)
+
+f1 = df %>% ggplot(aes(x=IQ, y=pdf_decl)) + geom_point() + labs(title="Gaussian PDF written by hand")
+f2 = df %>% ggplot(aes(x=IQ, y=r_dnorm)) + geom_point() + labs(title="Using R dnorm")
+
+f1+f2
+
+
+
+
+```
+
+
+
+
+```{r}
+# Now control it against the empirical cumulative distribution function by generating fake data
+
+fake_d = rnorm(10000, mean=mu, sd=sigma) # With parameters from previous "population data"
+
+emp_func = ecdf(fake_d) # Empirical cumulative distribution function for the newly generated fake_d 
+theoretical_pdf = pnorm(fake_data, mu, sigma) # Theoretical cumulative distribution function for previous "population data"
+
+par(mfrow=c(1,2))
+
+
+plot(emp_func, main="Empirical CDF"); abline(v=100, col="blue"); abline(h=0.5, col="blue")
+
+plot(fake_data, theoretical_pdf, main="Theoretical CDF"); abline(v=100, col="red"); abline(h=0.5, col="red")
+
+
+
+```
+
+
+
+
+
+
+
+```{r}
+
+## --- 50% of the fake observations are below the mean and 50% are above the mean
+# This must also hold for the pdf
+
+prop_below_100 = pnorm(100, mean=mu, sd=sigma)
+
+
+# Compare them, you should get approx 0
+print(emp_func(100) - prop_below_100)
+
+
+```
+
