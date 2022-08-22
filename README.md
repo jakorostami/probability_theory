@@ -1,11 +1,15 @@
-# probability_theory
-
-Welcome to a repo where probability distributions are explored and tested in both Python and R.
+## Welcome to a repo where probability distributions are explored and tested in both Python and R.
 
 Main use is exploratory to give people outside mathematical statistics a view of different distributions which are not covered in introductory stats classes.
 
+- [Metropolis-Hastings algorithm sampling from a double-exponential in Python](https://github.com/jakorostami/probability_theory/blob/main/mh_double_exp.ipynb)
+- [Generating Gamma variables and clocking the simulations in Python](https://github.com/jakorostami/probability_theory/blob/main/gamma_generated_variables_time_test.ipynb)
+- [Inverse transform from Uniform distribution, generating Exponential distributions from Gamma and Chi-Square distributions in Python](https://github.com/jakorostami/probability_theory/blob/main/exponential_distribution_with_gamma_chisquare.ipynb)
+- [Creating Brownian motion, comparing theoretical and empirical cdf in R](https://github.com/jakorostami/probability_theory/blob/main/R_code/brownian.Rmd)
+- [Building Metropolis-Hastings algorithm from scratch in R](https://github.com/jakorostami/probability_theory/blob/main/R_code/metropolis_hasting_from_scratch.R)
 
-### Example
+
+#### Example
 
 ![rolig1](https://user-images.githubusercontent.com/51382407/180520283-fd7b0b71-bbf8-4704-9023-d0bc2914148e.png)
 
