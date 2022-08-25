@@ -2,11 +2,15 @@
 
 Main use is exploratory to give people outside mathematical statistics a view of different distributions which are not covered in introductory stats classes.
 
-- [Metropolis-Hastings algorithm sampling from a double-exponential in Python](https://github.com/jakorostami/probability_theory/blob/main/mh_double_exp.ipynb)
-- [Generating Gamma variables and clocking the simulations in Python](https://github.com/jakorostami/probability_theory/blob/main/gamma_generated_variables_time_test.ipynb)
-- [Inverse transform from Uniform distribution, generating Exponential distributions from Gamma and Chi-Square distributions in Python](https://github.com/jakorostami/probability_theory/blob/main/exponential_distribution_with_gamma_chisquare.ipynb)
-- [Creating Brownian motion, comparing theoretical and empirical cdf in R](https://github.com/jakorostami/probability_theory/blob/main/R_code/brownian.Rmd)
-- [Building Metropolis-Hastings algorithm from scratch in R](https://github.com/jakorostami/probability_theory/blob/main/R_code/metropolis_hasting_from_scratch.R)
+### Python
+- [Metropolis-Hastings algorithm sampling from a double-exponential](https://github.com/jakorostami/probability_theory/blob/main/mh_double_exp.ipynb)
+- [Generating Gamma variables and clocking the simulations](https://github.com/jakorostami/probability_theory/blob/main/gamma_generated_variables_time_test.ipynb)
+- [Inverse transform from Uniform distribution, generating Exponential distributions from Gamma and Chi-Square distributions](https://github.com/jakorostami/probability_theory/blob/main/exponential_distribution_with_gamma_chisquare.ipynb)
+
+
+### R
+- [Creating Brownian motion, comparing theoretical and empirical cdf](https://github.com/jakorostami/probability_theory/blob/main/R_code/brownian.Rmd)
+- [Building Metropolis-Hastings algorithm from scratch](https://github.com/jakorostami/probability_theory/blob/main/R_code/metropolis_hasting_from_scratch.R)
 
 
 #### Example
