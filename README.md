@@ -11,7 +11,7 @@ Main use is exploratory to give people outside mathematical statistics a view of
 ### R
 - [Creating Brownian motion, comparing theoretical and empirical cdf](https://github.com/jakorostami/probability_theory/blob/main/R_code/brownian.Rmd)
 - [Building Metropolis-Hastings algorithm from scratch](https://github.com/jakorostami/probability_theory/blob/main/R_code/metropolis_hasting_from_scratch.R)
-
+- [Modeling and simulating Stochastic Branching Processes](https://github.com/jakorostami/probability_theory/blob/main/R_code/stochastic_branching.R)
 
 #### Example
 
