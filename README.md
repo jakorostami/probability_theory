@@ -7,6 +7,7 @@ Main use is exploratory to give people outside mathematical statistics a view of
 - [Generating Gamma variables and clocking the simulations](https://github.com/jakorostami/probability_theory/blob/main/gamma_generated_variables_time_test.ipynb)
 - [Inverse transform from Uniform distribution, generating Exponential distributions from Gamma and Chi-Square distributions](https://github.com/jakorostami/probability_theory/blob/main/exponential_distribution_with_gamma_chisquare.ipynb)
 - [Random walk in 1D, 2D and 3D](https://github.com/jakorostami/probability_theory/blob/main/random_walks.ipynb)
+- [Gaussian Mixture from scratch](https://github.com/jakorostami/probability_theory/blob/main/gaussian_mixture.ipynb)
 
 ### R
 - [Creating Brownian motion, comparing theoretical and empirical cdf](https://github.com/jakorostami/probability_theory/blob/main/R_code/brownian.Rmd)
