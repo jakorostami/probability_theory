@@ -16,8 +16,7 @@ Main use is exploratory to give people outside mathematical statistics a view of
 
 #### Example
 
-![rolig1](https://user-images.githubusercontent.com/51382407/180520283-fd7b0b71-bbf8-4704-9023-d0bc2914148e.png)
-
+![rolig1](https://user-images.githubusercontent.com/51382407/251195694-4c6de3c2-4475-4e58-8f57-52e7d1362a66.jpg)
 
 ![rolig2](https://user-images.githubusercontent.com/51382407/180520383-43ecffdb-4277-435e-864e-cbb7463c81a9.png)
 
