@@ -1,6 +1,6 @@
 ## Welcome to a repo where probability distributions are explored and tested in both Python and R.
 
-Main use is exploratory to give people outside mathematical statistics a view of different distributions which are not covered in introductory stats classes.
+Main use is exploratory to give people outside mathematical statistics a view of different distributions which aren't covered in introductory stats classes.
 
 ### Python
 - [Metropolis-Hastings algorithm sampling from a double-exponential](https://github.com/jakorostami/probability_theory/blob/main/mh_double_exp.ipynb)
