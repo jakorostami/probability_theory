@@ -3,17 +3,17 @@
 Main use is exploratory to give people outside mathematical statistics a view of different distributions which aren't covered in introductory stats classes.
 
 ### Python
-- [Metropolis-Hastings algorithm sampling from a double-exponential](https://github.com/jakorostami/probability_theory/blob/main/mh_double_exp.ipynb)
-- [Generating Gamma variables and clocking the simulations](https://github.com/jakorostami/probability_theory/blob/main/gamma_generated_variables_time_test.ipynb)
-- [Inverse transform from Uniform distribution, generating Exponential distributions from Gamma and Chi-Square distributions](https://github.com/jakorostami/probability_theory/blob/main/exponential_distribution_with_gamma_chisquare.ipynb)
-- [Random walk in 1D, 2D and 3D](https://github.com/jakorostami/probability_theory/blob/main/random_walks.ipynb)
-- [Gaussian Mixture from scratch](https://github.com/jakorostami/probability_theory/blob/main/gaussian_mixture.ipynb)
-- [Pink noise (autocorrelated noise) generation and transformation into Uniform noise](https://github.com/jakorostami/probability_theory/blob/main/pink_noise.py)
+- [Metropolis-Hastings algorithm sampling from a double-exponential](https://github.com/jakorostami/probability_theory/blob/main/python-code/mh_double_exp.ipynb)
+- [Generating Gamma variables and clocking the simulations](https://github.com/jakorostami/probability_theory/blob/main/python-code/gamma_generated_variables_time_test.ipynb)
+- [Inverse transform from Uniform distribution, generating Exponential distributions from Gamma and Chi-Square distributions](https://github.com/jakorostami/probability_theory/blob/main/python-code/exponential_distribution_with_gamma_chisquare.ipynb)
+- [Random walk in 1D, 2D and 3D](https://github.com/jakorostami/probability_theory/blob/main/python-code/random_walks.ipynb)
+- [Gaussian Mixture from scratch](https://github.com/jakorostami/probability_theory/blob/main/python-code/gaussian_mixture.ipynb)
+- [Pink noise (autocorrelated noise) generation and transformation into Uniform noise](https://github.com/jakorostami/probability_theory/blob/main/python-code/pink_noise.py)
 
 ### R
-- [Creating Brownian motion, comparing theoretical and empirical cdf](https://github.com/jakorostami/probability_theory/blob/main/R_code/brownian.Rmd)
-- [Building Metropolis-Hastings algorithm from scratch](https://github.com/jakorostami/probability_theory/blob/main/R_code/metropolis_hasting_from_scratch.R)
-- [Modeling and simulating Stochastic Branching Processes](https://github.com/jakorostami/probability_theory/blob/main/R_code/stochastic_branching.R)
+- [Creating Brownian motion, comparing theoretical and empirical cdf](https://github.com/jakorostami/probability_theory/blob/main/r-code/brownian.Rmd)
+- [Building Metropolis-Hastings algorithm from scratch](https://github.com/jakorostami/probability_theory/blob/main/r-code/metropolis_hasting_from_scratch.R)
+- [Modeling and simulating Stochastic Branching Processes](https://github.com/jakorostami/probability_theory/blob/main/r-code/stochastic_branching.R)
 
 #### Example
 
